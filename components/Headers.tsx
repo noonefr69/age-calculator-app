@@ -5,39 +5,42 @@ export default function Headers() {
     <form className="">
       <div className="flex mb-10 items-center gap-5">
         <div className="flex flex-col">
-          <label htmlFor="day" className="font-bold mb-3 text-xl text-gray-500">
+          <label htmlFor="day" className="font-bold mb-3 text-xl text-gray-500 ">
             DAY
           </label>
           <input
-            className="w-32 border-2 border-gray-200 outline-none rounded-lg px-3 py-3 placeholder:font-extrabold placeholder:text-xl placeholder:text-gray-500"
+            className="cursor-pointer w-32 ring-2 ring-gray-300 focus:ring-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
             type="number"
             placeholder="DD"
             id="day"
             name="day"
+            required
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="month" className="font-bold mb-3 text-xl text-gray-500">
+          <label htmlFor="month" className="font-bold mb-3 text-xl text-gray-500 ">
             MONTH
           </label>
           <input
-            className="w-32 border-2 border-gray-200 outline-none rounded-lg px-3 py-3 placeholder:font-extrabold placeholder:text-xl placeholder:text-gray-500"
+            className="cursor-pointer w-32 ring-2 ring-gray-300 focus:ring-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
             type="number"
             placeholder="MM"
             id="month"
             name="month"
+            required
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="year" className="font-bold mb-3 text-xl text-gray-500">
+          <label htmlFor="year" className="font-bold mb-3 text-xl text-gray-500 ">
             YEAR
           </label>
           <input
-            className="w-32 border-2 border-gray-200 outline-none rounded-lg px-3 py-3 placeholder:font-extrabold placeholder:text-xl placeholder:text-gray-500"
+            className="cursor-pointer w-32 ring-2 ring-gray-300 focus:ring-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
             type="number"
             placeholder="YYYY"
             id="year"
             name="year"
+            required
           />
         </div>
       </div>
