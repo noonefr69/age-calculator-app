@@ -14,3 +14,41 @@
   --color-grey-500: hsl(0, 1%, 44%);
   --color-black: hsl(0, 0%, 0%);
 }
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+input:not(:placeholder-shown):invalid{
+  border-color: red;
+}
+
+/* input:not(:placeholder-shown):invalid ~ label{
+  color: red;
+} */
+
+input:focus:invalid {
+  border-color: var(--color-purple-500);
+}
+
+input:not(:placeholder-shown):invalid + #errorDay,
+input:not(:placeholder-shown):invalid + #errorMonth,
+input:not(:placeholder-shown):invalid + #errorYear {
+  color: red;
+  display: block;
+}
+
+
+#errorDay,
+#errorMonth,
+#errorYear {
+  display: none;
+}
