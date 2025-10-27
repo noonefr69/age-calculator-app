@@ -25,9 +25,9 @@ export default function Headers() {
   }
 
   return (
-    <div>
+    <div className=" bg-white p-5 md:p-10 rounded-2xl m-10 rounded-br-[8rem] md:rounded-br-[10rem]">
       <form action={handlechange} className="mb-3">
-        <div className="flex items-center gap-10">
+        <div className="flex items-center justify-between gap-2 md:justify-start md:gap-10">
           <Input
             errorId="errorDay"
             label="day"
@@ -51,10 +51,10 @@ export default function Headers() {
           />
         </div>
         <div className="flex items-center">
-          <div className="h-1 w-xl bg-gray-200 rounded-2xl" />
+          <div className="h-1 w-full lg:w-xl bg-gray-200 rounded-2xl my-7 " />
           <button
             type="submit"
-            className="relative h-10 w-10 bg-purple-500 p-10 rounded-full duration-200 hover:bg-black hover:text-white cursor-pointer"
+            className="absolute left-1/2 -translate-x-1/2 md:translate-0 md:left-0 md:relative h-10 w-10 bg-purple-500 p-10 rounded-full duration-200 hover:bg-black hover:text-white cursor-pointer"
           >
             <Image
               src={`./assets/images/icon-arrow.svg`}

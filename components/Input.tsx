@@ -22,7 +22,7 @@ export default function Input({
         {label}
       </label>
       <input
-        className="cursor-pointer w-36 duration-200 border-2 border-gray-300 focus:border-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
+        className="cursor-pointer w-24 md:w-36 duration-200 border-2 border-gray-300 focus:border-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
         type="number"
         placeholder={placeHoler}
         id={label}
