@@ -31,10 +31,6 @@ input:not(:placeholder-shown):invalid{
   border-color: red;
 }
 
-/* input:not(:placeholder-shown):invalid ~ label{
-  color: red;
-} */
-
 input:focus:invalid {
   border-color: var(--color-purple-500);
 }
@@ -46,6 +42,13 @@ input:not(:placeholder-shown):invalid + #errorYear {
   display: block;
 }
 
+.input-wrapper:has(input:invalid:not(:placeholder-shown)) label {
+  color: red;
+}
+
+.input-wrapper:has(input:valid:not(:placeholder-shown)) label {
+  color: green;
+}
 
 #errorDay,
 #errorMonth,

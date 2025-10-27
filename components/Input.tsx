@@ -14,7 +14,7 @@ export default function Input({
   placeHoler,
 }: InputProps) {
   return (
-    <div className="flex flex-col relative pb-10">
+    <div className="flex flex-col relative pb-10 input-wrapper">
       <label
         htmlFor={label}
         className="font-bold uppercase mb-3 text-xl text-gray-500 "
