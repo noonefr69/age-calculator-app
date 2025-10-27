@@ -1,23 +1,18 @@
 type InputProps = {
-  time: number;
   label: string;
   min: number;
   max: number;
   errorId: string;
-  errorMes: string;
   placeHoler: string;
 };
 
 export default function Input({
-  time,
   label,
   min,
   max,
   errorId,
-  errorMes,
   placeHoler,
 }: InputProps) {
-    console.log(errorId);
   return (
     <div className="flex flex-col relative pb-10">
       <label
@@ -27,7 +22,7 @@ export default function Input({
         {label}
       </label>
       <input
-        className="cursor-pointer w-32 duration-200 border-2 border-gray-300 focus:border-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
+        className="cursor-pointer w-36 duration-200 border-2 border-gray-300 focus:border-purple-500 outline-none rounded-lg px-3 text-2xl font-black py-3 placeholder:font-extrabold placeholder:text-gray-500"
         type="number"
         placeholder={placeHoler}
         id={label}
@@ -36,7 +31,9 @@ export default function Input({
         min={min}
         max={max}
       />
-      <span className="absolute bottom-2 text-nowrap" id={errorId}>Must be a valid {label}</span>
+      <span className="absolute bottom-2 text-nowrap text-sm" id={errorId}>
+        Must be a valid {label}
+      </span>
     </div>
   );
 }
